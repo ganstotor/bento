@@ -1,0 +1,160 @@
+@media (max-width: 1240px) {
+  .header {
+    &__btn {
+      margin-right: auto;
+    }
+  }
+  .top {
+    &__inner {
+      grid-template-rows: 220px 390px;
+    }
+
+    &__title {
+      font-size: 54px;
+      line-height: 1;
+    }
+    &__images {
+      max-width: 80%;
+    }
+
+    &__promo {
+      background-position: bottom;
+      padding-top: 106px;
+    }
+
+    &__promo-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &__promo-text {
+      margin-bottom: 10px;
+    }
+    &__promo-img {
+      margin-bottom: 10px;
+      max-width: 70%;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .top {
+    &__inner {
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 200px 350px;
+    }
+    &__about {
+      padding-top: 40px;
+    }
+    &__title {
+      line-height: 1;
+      max-width: 400px;
+    }
+    &__slogan {
+      padding-left: 60px;
+    }
+    &__promo-title {
+      margin-bottom: 7px;
+    }
+    &__promo-text {
+      margin-bottom: 5px;
+    }
+    &__promo-img {
+      margin-bottom: 5px;
+    }
+    &__promo-btn {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .header {
+    &__inner {
+      justify-content: space-between;
+    }
+    &__logo{
+      margin-right: auto;
+      order: -1;
+    }
+    &__menu {
+      order: -1;
+    }
+    &__btn {
+     margin: 20px 0 0 auto;
+    }
+  }
+
+  .footer {
+    &__btn {
+      margin-left: auto;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    &__btn {
+      margin-left: auto;
+    }
+    .btn {
+      padding: 18px;
+    }
+  }
+
+  .logo {
+    img {
+      width: 250px;
+    }
+  }
+
+  .footer {
+    &__inner {
+      padding: 50px 10px 22px;
+    }
+    &__contacts-item {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .top {
+    &__inner {
+      display: block;
+    }
+    &__about {
+      padding: 20px;
+      background-image: none;
+      background-color: #8f7e70;
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__slogan {
+      padding-left: 0;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+    &__images {
+      max-width: 100%;
+    }
+    &__promo {
+      padding: 20px;
+      border-radius: 30px;
+    }
+    &__promo-title {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    &__promo-text {
+      margin-bottom: 15px;
+    }
+    &__promo-img {
+      margin-bottom: 15px;
+    }
+    &__promo-btn {
+      margin-bottom: 0px;
+      font-size: 16px;
+    }
+  }
+}
