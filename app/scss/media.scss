@@ -157,4 +157,12 @@
       font-size: 16px;
     }
   }
+  .statistics {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex-basis: 100%;
+    }
+  }
 }
