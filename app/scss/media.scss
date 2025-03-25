@@ -13,6 +13,7 @@
       font-size: 54px;
       line-height: 1;
     }
+
     &__images {
       max-width: 80%;
     }
@@ -26,12 +27,56 @@
       font-size: 18px;
       margin-bottom: 10px;
     }
+
     &__promo-text {
       margin-bottom: 10px;
     }
+
     &__promo-img {
       margin-bottom: 10px;
       max-width: 70%;
+    }
+
+    &__promo-btn {
+      margin-bottom: 20px;
+    }
+  }
+
+  .projects {
+    &__inner {
+      padding: 160px 40px 20px 50px;
+      border-bottom-right-radius: 30px;
+    }
+
+    &__slide-images {
+      width: 48%;
+      object-fit: contain;
+    }
+
+    &__slider-btn {
+      background-color: #3c342e;
+    }
+
+    .swiper-button-next {
+      right: 2px;
+
+    }
+
+    .swiper-button-prev {
+      right: 377px;
+    }
+
+    &__slider-btn {
+      bottom: 25px;
+      width: 44px;
+      height: 30px;
+    }
+  }
+
+
+  .tariffs {
+    &__list-item {
+      margin-left: 40px;
     }
   }
 }
@@ -42,25 +87,32 @@
       grid-template-columns: 2fr 3fr;
       grid-template-rows: 200px 350px;
     }
+
     &__about {
       padding-top: 40px;
     }
+
     &__title {
       line-height: 1;
       max-width: 400px;
     }
+
     &__slogan {
       padding-left: 60px;
     }
+
     &__promo-title {
       margin-bottom: 7px;
     }
+
     &__promo-text {
       margin-bottom: 5px;
     }
+
     &__promo-img {
       margin-bottom: 5px;
     }
+
     &__promo-btn {
       margin-bottom: 10px;
       font-size: 16px;
@@ -71,15 +123,18 @@
     &__inner {
       justify-content: space-between;
     }
-    &__logo{
+
+    &__logo {
       margin-right: auto;
       order: -1;
     }
+
     &__menu {
       order: -1;
     }
+
     &__btn {
-     margin: 20px 0 0 auto;
+      margin: 20px 0 0 auto;
     }
   }
 
@@ -89,6 +144,74 @@
       margin-top: 20px;
     }
   }
+
+  .about {
+    &__wrapper {
+      padding-bottom: 50px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__inner {
+      padding: 50px 50px 20px;
+      border-radius: 30px;
+    }
+  }
+
+  .projects {
+    margin-top: 0;
+
+    &__inner {
+      background-image: none;
+      background-color: #8f7e70;
+      border-radius: 30px;
+      padding: 50px 50px 20px;
+    }
+
+    &__slider {
+      margin-top: 0;
+    }
+
+    &__slide-inner {
+      flex-wrap: wrap;
+
+    }
+    &__slide-images {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__slide-text {
+      max-width: 100%;
+    }
+    &__slide-info {
+      margin-top: -40px;
+      justify-content: right;
+    }
+    .swiper-button-next {
+      right: 15px;
+    }
+    .swiper-button-prev {
+      right: auto;
+      left: 24px;
+    }
+    &__slider-btn {
+      bottom: 9px;
+    }
+  }
+
+  .tariffs {
+    &__inner {
+      display: block;
+    }
+    &__content-left {
+      margin-bottom: 40px;
+    }
+    &__info {
+      justify-content: space-between;
+    }
+  }
 }
 
 @media (max-width: 770px) {
@@ -96,6 +219,7 @@
     &__btn {
       margin-left: auto;
     }
+
     .btn {
       padding: 18px;
     }
@@ -111,6 +235,7 @@
     &__inner {
       padding: 50px 10px 22px;
     }
+
     &__contacts-item {
       flex-basis: 100%;
       margin-bottom: 30px;
@@ -121,6 +246,7 @@
     &__inner {
       display: block;
     }
+
     &__about {
       padding: 20px;
       background-image: none;
@@ -128,30 +254,38 @@
       display: block;
       margin-bottom: 20px;
     }
+
     &__slogan {
       padding-left: 0;
     }
+
     &__title {
       font-size: 48px;
       line-height: 1.2;
     }
+
     &__images {
       max-width: 100%;
     }
+
     &__promo {
       padding: 20px;
       border-radius: 30px;
     }
+
     &__promo-title {
       margin-bottom: 15px;
       font-size: 20px;
     }
+
     &__promo-text {
       margin-bottom: 15px;
     }
+
     &__promo-img {
       margin-bottom: 15px;
     }
+
     &__promo-btn {
       margin-bottom: 0px;
       font-size: 16px;
@@ -161,7 +295,71 @@
     &__list {
       flex-wrap: wrap;
     }
+
     &__item {
+      flex-basis: 100%;
+    }
+  }
+  .about {
+    &__inner {
+      padding: 50px 10px 20px;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .projects {
+    &__inner {
+      padding: 50px 10px 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__slide-inner {
+      gap: 25px;
+    }
+    &__slide-btn {
+      bottom: 0;
+    }
+    &__slide-title {
+      font-size: 30px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__slide-info {
+      flex-wrap: wrap;
+      li {
+        width: 48%;
+        &:last-child {
+          background-size: cover;
+          height: 60px;
+          background-image: none;
+          background-color: #3c342e;
+          flex-basis: 100%;
+        }
+      }
+    }
+    .swiper-button-next {
+      right: 5px;
+    }
+    .swiper-button-prev {
+      left: 5px;
+    }
+  }
+  .tariffs {
+    &__info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__size {
+      margin-bottom: 20px;
+      flex-basis: 100%;
+    }
+    &__btn {
       flex-basis: 100%;
     }
   }
