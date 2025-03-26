@@ -79,6 +79,33 @@
       margin-left: 40px;
     }
   }
+
+  .gallery {
+    &__inner {
+      grid-template-rows: 70px 220px 120px;
+    }
+  }
+  .gall-2 {
+    margin-top: -21px;
+  }
+  .gall-3 {
+    height: 110%;
+  }
+  .gall-5 {
+    align-self: auto;
+    margin-top: 9px;
+  }
+  .gall-6 {
+    height: 73%;
+    margin-top: 86px;
+  }
+  .gall-7 {
+    margin-top: -17px;
+  }
+  .gall-9 {
+    align-self: auto;
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -178,24 +205,30 @@
       flex-wrap: wrap;
 
     }
+
     &__slide-images {
       max-width: 100%;
       width: 100%;
     }
+
     &__slide-text {
       max-width: 100%;
     }
+
     &__slide-info {
       margin-top: -40px;
       justify-content: right;
     }
+
     .swiper-button-next {
       right: 15px;
     }
+
     .swiper-button-prev {
       right: auto;
       left: 24px;
     }
+
     &__slider-btn {
       bottom: 9px;
     }
@@ -205,12 +238,44 @@
     &__inner {
       display: block;
     }
+
     &__content-left {
       margin-bottom: 40px;
     }
+
     &__info {
       justify-content: space-between;
     }
+  }
+
+  .gallery {
+    &__inner {
+      grid-template-rows: 30px 200px 80px;
+      gap: 10px;
+    }
+  }
+  .gall-2 {
+    margin-top: -42px;
+  }
+  .gall-3 {
+    object-fit: cover;
+    height: 175%;
+    border-radius: 15px;
+  }
+  .gall-5 {
+    align-self: auto;
+    margin-top: 9px;
+  }
+  .gall-6 {
+    height: 55%;
+    margin-top: 92px;
+  }
+  .gall-7 {
+    margin-top: -23px;
+  }
+
+  .gall-9 {
+    margin-top: -17px;
   }
 }
 
@@ -304,9 +369,11 @@
     &__inner {
       padding: 50px 10px 20px;
     }
+
     &__subtitle {
       margin-bottom: 20px;
     }
+
     &__title {
       font-size: 30px;
       margin-bottom: 20px;
@@ -316,24 +383,31 @@
     &__inner {
       padding: 50px 10px 20px;
     }
+
     &__title {
       margin-bottom: 20px;
     }
+
     &__slide-inner {
       gap: 25px;
     }
+
     &__slide-btn {
       bottom: 0;
     }
+
     &__slide-title {
       font-size: 30px;
       margin-right: 0;
       margin-bottom: 20px;
     }
+
     &__slide-info {
       flex-wrap: wrap;
+
       li {
         width: 48%;
+
         &:last-child {
           background-size: cover;
           height: 60px;
@@ -343,24 +417,39 @@
         }
       }
     }
+
     .swiper-button-next {
       right: 5px;
     }
+
     .swiper-button-prev {
       left: 5px;
     }
   }
   .tariffs {
+    margin-bottom: 50px;
     &__info {
       flex-wrap: wrap;
       justify-content: center;
     }
+
     &__size {
       margin-bottom: 20px;
       flex-basis: 100%;
     }
+
     &__btn {
       flex-basis: 100%;
     }
+  }
+  .gallery {
+    &__inner {
+      display: none;
+    }
+    &__img-mobile {
+      display: block;
+      height: auto;
+    }
+
   }
 }
