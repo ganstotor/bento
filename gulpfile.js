@@ -14,6 +14,8 @@ const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const svgSprite = require('gulp-svg-sprite');
 const include = require('gulp-include');
+const gulp = require("gulp");
+const ghPages = require("gulp-gh-pages");
 
 function pages() {
   return src('app/pages/*.html')
@@ -115,6 +117,14 @@ function building() {
   ], {base : 'app'})
     .pipe(dest('dist'))
 }
+
+const deployFolder = "dist";
+
+// Задача для деплоя на GitHub Pages
+gulp.task("deploy", function () {
+  return gulp.src(`${deployFolder}/**/*`)
+      .pipe(ghPages());
+});
 
 exports.styles = styles;
 exports.images = images;
