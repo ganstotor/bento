@@ -35,15 +35,15 @@ function fonts() {
 }
 
 function images(){
-  return src(['app/images/src/*.*', '!app/images/src/*.svg'])
+  return src(['app/images/src/**/*.*', '!app/images/src/**/*.svg'])
     .pipe(newer('app/images'))
     .pipe(avif({ quality : 50}))
 
-    .pipe(src('app/images/src/*.*'))
+    .pipe(src('app/images/src/**/*.*'))
     .pipe(newer('app/images'))
     .pipe(webp())
 
-    .pipe(src('app/images/src/*.*'))
+    .pipe(src('app/images/src/**/*.*'))
     .pipe(newer('app/images'))
     .pipe(imagemin())
 
@@ -65,6 +65,7 @@ function sprite () {
 
 function scripts() {
   return src([
+      'node_modules/swiper/swiper-bundle.js',
     'app/js/main.js',
   ])
     .pipe(concat('main.min.js'))
